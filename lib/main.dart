@@ -112,7 +112,10 @@ class _CounterState extends State<Counter> {
         CounterIncrementor(onPressed: _increment),
         const SizedBox(width: 16),
         CounterDisplay(count: _counter),
-        Expanded(
+
+        SizedBox(
+          width: 200,
+          height: 200,
           child: ShoppingList(
             products: [
               Product(name: 'Eggs'),
